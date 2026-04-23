@@ -7,7 +7,7 @@
 
 <body style="margin:0; padding:0; text-align:center;">
 
-<h3>Loading Ad...</h3>
+<h3>Ad Loading... Please wait</h3>
 
 <div style="margin-top:20px;">
   <script>
@@ -21,6 +21,16 @@
   </script>
   <script src="https://www.highperformanceformat.com/5ace83be879b3c04c475f6121ccbac55/invoke.js"></script>
 </div>
+
+<script>
+  var nextLink = window.location.search.substring(1);
+
+  if(nextLink){
+    setTimeout(function() {
+      window.location.href = nextLink;
+    }, 5000);
+  }
+</script>
 
 </body>
 </html>
